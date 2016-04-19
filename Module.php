@@ -1,5 +1,5 @@
 <?php
-namespace Schmiddim\MvcAuth\ApiKey;
+namespace Schmiddim\MvcAuth;
 
 class Module
 {

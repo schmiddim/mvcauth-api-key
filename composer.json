@@ -12,7 +12,8 @@
   ],
   "homepage": "http://apigility.org/",
   "require": {
-    "php": ">=5.5"
+    "php": ">=5.5",
+    "zfcampus/zf-mvc-auth": "~1.0"
   },
   "require-dev": {
   },
