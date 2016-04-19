@@ -1,5 +1,5 @@
 {
-  "name": "schmiddim/apigility-api-key",
+  "name": "schmiddim/mvcauth-api-key",
   "description": "ZF2 Module providing API Key Authentication for MvcAuth",
   "type": "library",
   "license": "BSD-3-Clause",
