@@ -1,0 +1,20 @@
+<?php
+
+return array(
+    'zf-mvc-auth' => array(
+        'authentication' => array(
+            'adapters' => array(
+                'api-key' => array(
+                    'adapter' => Schmiddim\MvcAuth\Adapter\ApiKeyAdapter::class,
+                    'types' => array('api-key')
+                ),
+            ),
+        ),
+    ),
+
+    'api-key-authentication' => array(
+        'users' => array(
+            'YOUR_KEY'
+        )
+    )
+);

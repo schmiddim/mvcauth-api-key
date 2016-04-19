@@ -5,7 +5,7 @@ namespace Schmiddim\MvcAuth\Factory;
 use Zend\ServiceManager\ServiceLocatorInterface;
 use ZF\MvcAuth\Factory\AuthenticationHttpAdapterFactory;
 use ZF\MvcAuth\Factory\AuthenticationOAuth2AdapterFactory;
-
+use Schmiddim\MvcAuth\Adapter\ApiKeyAdapter;
 class AuthenticationAdapterDelegatorFactory extends \ZF\MvcAuth\Factory\AuthenticationAdapterDelegatorFactory
 {
 
@@ -34,7 +34,7 @@ class AuthenticationAdapterDelegatorFactory extends \ZF\MvcAuth\Factory\Authenti
 
             switch ($data['adapter']) {
 
-                case 'MvcAuth\ApiKeyAdapter':
+                case 'Schmiddim\MvcAuth\Adapter\ApiKeyAdapter':
 
                     $adapter = AuthenticationApiKeyAdapterFactory::factory($type, $data, $services);
 
