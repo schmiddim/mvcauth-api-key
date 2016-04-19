@@ -69,13 +69,21 @@ class ApiKeyAdapter implements AdapterInterface
      */
     public function authenticate(Request $request, Response $response, MvcAuthEvent $mvcAuthEvent)
     {
+
+        $apiUser = $request->getHeader('xapiuser', null);
         $apiKey = $request->getHeader('xapikey', null);
+
         if (null === $apiKey) {
             return false;
         }
+        if (null === $apiUser) {
+            return false;
+        }
 
-        if (true === in_array($apiKey->getFieldValue(), $this->userConfig['users'])) {
-            return new AuthenticatedIdentity(new Identity());
+        if (true === array_key_exists($apiUser->getFieldValue(), $this->userConfig['users'])) {
+            if ($this->userConfig['users'][$apiUser->getFieldValue()] === $apiKey->getFieldValue()) {
+                return new AuthenticatedIdentity(new Identity());
+            }
         }
         return false;
     }
