@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Funct\\Apigility\\ApiKey\\": "src/"
+      "Schmiddim\\MvcAuth\\": "src/"
     },
     "classmap": [
       "Module.php"
