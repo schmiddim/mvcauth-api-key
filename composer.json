@@ -13,7 +13,8 @@
   "homepage": "http://apigility.org/",
   "require": {
     "php": ">=5.5",
-    "zfcampus/zf-mvc-auth": "~1.0"
+    "zfcampus/zf-mvc-auth": "~1.0",
+    "roderik/pwgen-php": "0.1.*"
   },
   "require-dev": {
   },
