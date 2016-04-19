@@ -1,0 +1,27 @@
+{
+  "name": "funct/apigility-api-key",
+  "description": "ZF2 Module providing API Key Authentication for Apigility",
+  "type": "library",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "zf2",
+    "zend",
+    "module",
+    "rest",
+    "hal"
+  ],
+  "homepage": "http://apigility.org/",
+  "require": {
+    "php": ">=5.5"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Funct\\Apigility\\ApiKey\\": "src/"
+    },
+    "classmap": [
+      "Module.php"
+    ]
+  }
+}
