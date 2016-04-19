@@ -1,5 +1,5 @@
 <?php
-namespace Funct\Apigility\ApiKey;
+namespace Schmiddim\MvcAuth\ApiKey;
 
 class Module
 {
