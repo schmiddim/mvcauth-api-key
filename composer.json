@@ -5,10 +5,10 @@
   "license": "BSD-3-Clause",
   "keywords": [
     "zf2",
-    "zend",
+    "mvc-auth",
     "module",
-    "rest",
-    "hal"
+    "apigility",
+    "api key"
   ],
   "homepage": "http://apigility.org/",
   "require": {
